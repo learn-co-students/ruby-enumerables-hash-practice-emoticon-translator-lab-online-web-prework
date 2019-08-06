@@ -1,4 +1,4 @@
-# require modules here
+'get_japanese_emoticon
 
 def load_library
   # code goes here
