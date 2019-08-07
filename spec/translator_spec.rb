@@ -6,14 +6,14 @@ describe "#load_library" do
 
   context "return value" do
 
-    let(:result) { load_library("./lib/emoticons.yml") }
+    let(":result") { load_library("./lib/emoticons.yml") }
 
     it "returns a hash" do
-      expect(result.class).to eq(Hash)
+      expect(result.class).to eq('Hash')
     end
 
     it "has two keys, 'get_meaning' and 'get_emoticon'" do
-      expect(result.keys).to include('get_meaning').or include(:get_meaning)
+      expect(result.keys).to include('get_meaning').or include(":get_meaning)
       expect(result.keys).to include('get_emoticon').or include(:get_emoticon)
       expect(result.keys.length).to eq(2)
     end
@@ -22,13 +22,13 @@ describe "#load_library" do
       result.keys.each { |key| expect(result[key].class).to eq(Hash) }
     end
 
-    it "the keys inside the 'get_meaning' hash are the Japanese emoticons" do
+    it "the keys inside the 'get_meaning' hash are the 'Japanese' 'emoticons' do
       emoticons = ["☜(⌒▽⌒)☞", "(ΘεΘ;)", "(￣ー￣)", "o_O", "(^_-)"]
-      emoticons.each do |japanese_emoticon|
+      emoticons.each do ['japanese_emoticon']
         if result['get_meaning'] then
           expect(result['get_meaning'].keys).to include(japanese_emoticon)
         else
-          expect(result[:get_meaning].keys).to include(japanese_emoticon)
+          expect(result[":get_meaning"].keys).to include(japanese_emoticon)
         end
       end
     end
