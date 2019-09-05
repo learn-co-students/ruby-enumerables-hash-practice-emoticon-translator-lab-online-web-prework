@@ -75,7 +75,8 @@ describe "#load_library" do
 
 end
 
-describe "#get_japanese_emoticon" do
+fdescribe "#get_japanese_emoticon" do
+require 'pry'
 
   it "accepts two arguments, the YAML file path and the emoticon" do
     expect { get_japanese_emoticon("./lib/emoticons.yml", ":)") }.to_not raise_error
