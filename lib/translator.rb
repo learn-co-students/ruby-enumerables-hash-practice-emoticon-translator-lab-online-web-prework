@@ -13,8 +13,8 @@ emot[:get_emoticon][array_emot[0]] = array_emot[1]
   emot
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(the_file, get_emoticon)
+  
 end
 
 def get_english_meaning
