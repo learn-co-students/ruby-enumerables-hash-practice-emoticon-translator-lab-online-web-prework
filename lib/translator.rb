@@ -14,7 +14,6 @@ emot[:get_emoticon][array_emot[0]] = array_emot[1]
 end
 
 def get_japanese_emoticon(the_file, get_em)
-  
   results = load_library(the_file) 
   sorry_message = "Sorry, that emoticon was not found"
   english = results[:get_emoticon][get_em]
@@ -23,8 +22,17 @@ def get_japanese_emoticon(the_file, get_em)
   else
     return english
   end
+  load_library(the_file)
+      #binding.pry
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(the_file, em)
+ solution = load_library(the_file) 
+  sorry_message = "Sorry, that emoticon was not found"
+  meaning = solution[:get_meaning][em]
+  if meaning == nil 
+    return sorry_message
+  else
+    return meaning
+  end
 end
