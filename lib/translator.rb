@@ -3,8 +3,7 @@ require 'pry'
 require "yaml"
 require 'pp'
 
-def load
-  _library(emojo_file)
+def load_library(emojo_file)
   data = YAML.load_file(emojo_file)
     
   emojo_hash = {
