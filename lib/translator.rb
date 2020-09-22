@@ -1,13 +1,14 @@
 # require modules here
 
+
 def load_library
-  # code goes here
+  hash = { "get_emoticon" : {}}
 end
 
 def get_japanese_emoticon
-  # code goes here
+  hash = { "get_japanese_emoticon" : {}}
 end
 
 def get_english_meaning
-  # code goes here
+  hash = { "get_english_meaning" : {}}
 end
