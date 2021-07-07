@@ -1,13 +1,15 @@
 # require modules here
 
-def load_library
-  # code goes here
+def load_library{"./lib/emoticons.yml"
+}
 end
 
 def get_japanese_emoticon
-  # code goes here
+  require "yaml"
+  japanese_emoticon= YAML.load_file
 end
 
 def get_english_meaning
-  # code goes here
+  require "yaml"
+  english_meaning = YAML.load_file
 end
