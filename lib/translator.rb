@@ -1,13 +1,21 @@
-# require modules here
+
 
 def load_library
-  # code goes here
+get_meaning: "8D"
+get_emoticon: "=D"
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(YAML.file_path, emoticon)
+  - "=D"
+  - "（＾ｖ＾）"
+  - "(Ｔ ▽ Ｔ)"
+  - "Im sorry but this is not on the list."
+
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(YAML.file_path, emoticon)
+- "（＾ｖ＾)"
+- "=D"
+- ":'("
+- "Im sorry but that emoticon is not available"
 end
